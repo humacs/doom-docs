@@ -1,0 +1,33 @@
+#+TITLE: Doom Docs
+
+Getting to know Doom for ii spacemacs users.
+* Doom Basics
+Doom is, like Spacemacs, a /flavour/ of Emacs.  It is still Emacs underneath it all, but with some pre-configured set of packages, UI, and keybindings.
+
+It is designed to be simple (as simple as Emacs can be!), fast, and orderly to maintain.
+* Biggest Differences to Spacemacs
+Doom works with a paradigm of "Projects" that is more deeply integrated than Spacemacs.  Each repo you work in is its own project, with its own set of TODO's, buffers, and file exploration.
+(This is done, partly, in Spacemacs but the integration is not as consistent or smooth.)  A number of the basic keybindings in Doom are to help with the project setup. Notably:
+
+- SPC SPC ::  open up project file switcher
+- SPC pt :: brings up the project TODO's
+
+ To run an emacs command, you instead type ~SPC :~
+
+ The other big difference is in configuration.  Instead of having one big file, you have a folder of files, each focused to one element of configuration.
+
+ You can reach this folder with ~SPC fp~.  In short,  ~init.el~ is where you toggle pre-built modules, ~packages.el~ is where you add additional packages/modules, ~config.org~ is where you add configuration settings for either.
+
+* Configuring Doom
+If you've made changes to yoru config, they will not apply automatically, especially if you've toggled a new package.  Doom
+* Getting Help
+There's great internal documentation that can help to learn the new keybindings, along with all the cool tools available to you.
+ - SPC h :: brings up the help docs
+ - SPC h f :: describe function
+ - SPC h v :: describe variable
+ - SPC h d h :: doom help manual (the readme on doom's github)
+ - SPC h d m :: module help (e.g. seeing what's avaialble for go-mode)
+* Resources
+In addition, I recommend these resources:
++ [[https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org][Official Getting Started Guide]]
++ [[https://www.youtube.com/watch?v=rCMh7srOqvw&list=PLhXZp00uXBk4np17N39WvB80zgxlZfVwj][Zaiste's Doom Emacs Series]]
